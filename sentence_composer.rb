@@ -41,3 +41,6 @@ while true
 end
 
 puts sentence
+
+select_one.close
+client.close
