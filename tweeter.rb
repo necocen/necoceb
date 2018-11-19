@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 require 'twitter'
-require 'dotenv'
 
 YOUR_CONSUMER_KEY = ENV['NCCB_TWITTER_CONSUMER_KEY']
 YOUR_CONSUMER_SECRET = ENV['NCCB_TWITTER_CONSUMER_SECRET']
