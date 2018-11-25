@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
+require 'dotenv'
 require 'mysql'
+
+Dotenv.load
 
 client = Mysql.connect(ENV['NCCB_MYSQL_HOST'], ENV['NCCB_MYSQL_USER'], ENV['NCCB_MYSQL_PASSWORD'], ENV['NCCB_MYSQL_DB'])
 client.charset = "utf8"
