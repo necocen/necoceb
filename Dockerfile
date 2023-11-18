@@ -9,7 +9,7 @@ COPY Gemfile.lock /etc/necoceb
 WORKDIR /etc/necoceb
 
 RUN apk --update --upgrade add build-base
-RUN gem install bundler
+RUN gem install bundler -v 2.3.27
 RUN bundle install --path .bundle
 
 CMD bundle exec ruby ./sentence_composer.rb | bundle exec ruby ./tweeter.rb
